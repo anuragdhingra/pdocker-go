@@ -28,7 +28,7 @@ Use the argument optional argument `ssh_key_path` in case of custom paths:
 ```bash
 make build-dev ssh_key_path=~/.ssh/${SSH_KEY_FILENAME}
 ```
-*NOTE*: Make sure you have the same public part of the key added to your github account.
+*NOTE*: Make sure you have the same public part of the key added to your github account [here](https://github.com/settings/keys).
 
 - The make command will use your ssh_key make authenticated requests inside the
 container environment, spin up an elasticsearch instance, a mysql instance and once both of them are ready will spin
