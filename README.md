@@ -1,4 +1,4 @@
-# elasticsearch-go
+# pdocker-go
 
 This repo is the basic implementation of containerizing a golang app via docker using private repos as
 import packages. The problem we encounter is to provide the required ssh_key while fetching these packages using `go get` to 
@@ -18,7 +18,7 @@ RUN mkdir -p /root/.ssh && \
 ### Steps to follow:
 - Get the project using `go get` :
 ```bash
-go get github.com/anuragdhingra/elasticsearch-go
+go get github.com/anuragdhingra/pdocker-go
 ```
 - Run make command, if you have default github ssh_key_path as `~/.ssh/id_rsa`:
 ```bash

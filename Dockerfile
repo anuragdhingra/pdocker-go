@@ -17,8 +17,8 @@ RUN mkdir -p /root/.ssh && \
     echo "[url \"ssh://git@github.com/\"]\n\tinsteadOf = https://github.com/" >> /root/.gitconfig && \
     echo "Host github.com\n\tStrictHostKeyChecking no\n" >> /root/.ssh/config
 
-RUN go get github.com/anuragdhingra/elasticsearch-go
-WORKDIR /go/src/github.com/anuragdhingra/elasticsearch-go
+RUN go get github.com/anuragdhingra/pdocker-go
+WORKDIR /go/src/github.com/anuragdhingra/pdocker-go
 
 RUN dep ensure
 

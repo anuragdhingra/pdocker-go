@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
-	_ "github.com/anuragdhingra/elasticsearch-go/data"
+	_ "github.com/anuragdhingra/pdocker-go/data"
 	"github.com/olivere/elastic"
 	"log"
 	"net/http"
