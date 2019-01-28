@@ -29,6 +29,10 @@
   name = "github.com/olivere/elastic"
   version = "6.2.15"
 
+[[constraint]]
+  name = "github.com/go-sql-driver/mysql"
+  branch= "master"
+
 [prune]
   go-tests = true
   unused-packages = true

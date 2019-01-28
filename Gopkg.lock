@@ -3,6 +3,14 @@
 
 [[projects]]
   branch = "master"
+  digest = "1:2d61f43bd2ab9815d08066eaa47b647ac98aaad358d6275f1772588fa6f65c50"
+  name = "github.com/go-sql-driver/mysql"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "1b9eda25029c206f36637dde8e2acad26df99dab"
+
+[[projects]]
+  branch = "master"
   digest = "1:aa3d8d42865c42626b5c1add193692d045b3188b1479f0a0a88690d21fe20083"
   name = "github.com/mailru/easyjson"
   packages = [
@@ -34,9 +42,20 @@
   revision = "ba968bfe8b2f7e042a574c888954fccecfa385b4"
   version = "v0.8.1"
 
+[[projects]]
+  digest = "1:c25289f43ac4a68d88b02245742347c94f1e108c534dda442188015ff80669b3"
+  name = "google.golang.org/appengine"
+  packages = ["cloudsql"]
+  pruneopts = "UT"
+  revision = "e9657d882bb81064595ca3b56cbe2546bbabf7b1"
+  version = "v1.4.0"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  input-imports = ["github.com/olivere/elastic"]
+  input-imports = [
+    "github.com/go-sql-driver/mysql",
+    "github.com/olivere/elastic",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
