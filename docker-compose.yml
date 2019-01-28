@@ -1,0 +1,23 @@
+version: '3'
+services:
+  app:
+    build: .
+    command: ["./wait-for-it.sh","localhost:9200", "-t", "30", "--", "go", "run", "main.go"]
+    volumes:
+      - .:/go/src/TestApp
+    ports:
+      - 8080:8080
+    depends_on:
+      - mysql
+    container_name: golang_app
+
+  mysql:
+    image: mysql:5
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_USER: monstar-lab
+      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: todo
+    container_name: mysql
