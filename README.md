@@ -20,6 +20,10 @@ RUN mkdir -p /root/.ssh && \
 ```bash
 go get github.com/anuragdhingra/pdocker-go
 ```
+- Change directory:
+```bash
+cd $GOPATH/src/github.com/anuragdhingra/pdocker-go
+```
 - Run make command, if you have default github ssh_key_path as `~/.ssh/id_rsa`:
 ```bash
 make build-dev
