@@ -1,4 +1,5 @@
 # pdocker-go
+Blog on medium: [Containerize a golang app using private GitHub repos as import packages](https://medium.com/@anuragdhingra/containerize-a-golang-app-using-private-github-repos-as-import-packages-51e993afe394)
 
 This repo is the basic implementation of containerizing a golang app via docker using private repos as
 import packages. The problem we encounter is to provide the required ssh_key while fetching these packages using `go get` to 
